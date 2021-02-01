@@ -1,0 +1,48 @@
+<h1>Your Cart</h1>
+
+<hr />
+
+<table id="cartTable">
+  <tr>
+    <th>Name</th>
+    <th>Type</th>
+    <th>Price</th>
+    <th>Quantity</th>
+    <th>Remove</th>
+  </tr>
+  <tr id="noChecksMessage">
+    <td colspan="5">Cart is empty!</td>
+  </tr>
+</table>
+<br>
+<div class="inputWrapper" id="orderTotal">
+  <div class="inputLabel">Order Total</div>
+  <input id="displayOrderTotalInput" type="text" name="displayOrderTotal" disabled />
+</div>
+<br>
+<div id="editCartCTA" class="ctaWrapper">
+  <a class="cta green" href="menu/viewMenu">View Menu</a>
+</div>
+
+<hr>
+
+<br>
+
+<h2>Order NOW!</h2>
+
+<br>
+
+<div class="formWrapper">
+  <form id="placeOrderForm" action="/api/orders" method="POST">
+    <input type="hidden" name="_method" value="POST"/>
+    <div class="formError"></div>
+    <div class="formSuccess">Order Placed Successfully!</div>
+    <div class="inputWrapper">
+      <div class="inputLabel">Payment Method</div>
+      <input class="disabled paymentMethodInput" type="text" name="paymentMethod" disabled />
+    </div>
+    <div class="inputWrapper ctaWrapper">
+      <button type="submit" class="cta green">Place Order</button>
+    </div>
+  </form>
+</div>

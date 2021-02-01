@@ -1,0 +1,46 @@
+{
+    "veg": [
+        {
+            "id": 1,
+            "Item": "margherita",
+            "price": 200
+        },
+        {
+            "id": 2,
+            "Item": "farmhouse",
+            "price": 300
+        },
+        {
+            "id": 3,
+            "Item": "extravaganza",
+            "price": 200
+        },
+        {
+            "id": 4,
+            "Item": "peppy",
+            "price": 400
+        },
+        {
+            "id": 5,
+            "Item": "sandwich",
+            "price": 300
+        }
+    ],
+    "non-veg": [
+        {
+            "id": 6,
+            "Item": "pepperoni",
+            "price": 500
+        },
+        {
+            "id": 7,
+            "Item": "sausage",
+            "price": 200
+        },
+        {
+            "id": 8,
+            "Item": "tikka",
+            "price": 100
+        }
+    ]
+}
